@@ -1,0 +1,94 @@
+body {
+	font-size: 25px;
+	color: rgba(255,255,255,.8); /*blanco transparente*/
+	font-family: Futura-pt, Ration, sans-serif;
+	font-weight: bold;
+	letter-spacing: 1.5px;
+}
+#main {
+	user-select: none;
+	min-width: 800px;
+	max-width: 800px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;	
+	text-align: center;
+}
+/*.verticalCenter{*/
+	/*user-select: none;*/
+	/*display: inline-block;*/
+	/*vertical-align: middle;*/
+/*}*/
+aside {
+	width: 220px;
+	height: 340px;
+	margin-left: 10px;
+	background-color: rgb(100,150,255);
+	display: inline-block;
+}
+div#init{
+	user-select: none;
+	min-width: 380px;
+	max-width: 380px;
+	min-height: 300px;
+	padding: 30px;
+	background-color: rgb(100,200,255);
+}
+div#mod{
+	user-select: none;
+	min-width: 380px;
+	max-width: 380px;
+	min-height: 80px;
+	padding: 30px;
+	background-color: rgb(185,190,135);
+}
+div.div {
+	cursor: move;
+	width: 50px;
+	height: 50px;
+	background-color: rgb(255,100,200);
+	margin: 20px;
+	display: inline-block;
+	z-index: 2;
+}
+.inline {
+	display: inline-block;
+}
+.noMargin {
+	margin: 0;
+}
+.block {
+	display: block;
+}
+.options {
+	font-size: .7em;
+	margin: 2px;
+}
+
+/*BUTTONS*/
+button:hover{
+	-webkit-transition: background-color 100ms linear;
+	-moz-transition: background-color 100ms linear;
+	-o-transition: background-color 100ms linear;
+	-ms-transition: background-color 100ms linear;
+	transition: background-color 100ms linear;
+
+	-webkit-transition: color 100ms linear;
+	-moz-transition: color 100ms linear;
+	-o-transition: color 100ms linear;
+	-ms-transition: color 100ms linear;
+	transition: color 100ms linear;
+}
+button {
+	width: 150px;
+	height: 50px;
+	color: rgba(150,150,150,.8); /*blanco transparente*/
+	font-size: .9em;
+	letter-spacing: 1px;
+	background-color: rgb(275,253,153); /*amarillo*/
+	margin: 5px;
+}
+button:hover{
+	color: rgba(255,255,255,.8); /*blanco transparente*/
+	background-color: rgb(100, 200, 255); /*azul*/
+}

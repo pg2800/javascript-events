@@ -1,0 +1,41 @@
+<!-- Display a set of divs with visible borders.
+A user must be able to drag & drop a div to a specially indicated area 
+Any div placed in the designated area must be visually edited through control components such as color pickers and sliders. Editable properties should include:
+border color
+border thickness
+background color
+rounded edges
+The items must be able to be placed back, retaining any modifications made.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/myCss.css"> 
+</head>
+<body>
+	<section id="main">
+		<article class="inline noMargin">
+			<div id="init"><p class="inline">Squares</p></div>
+			<div id="mod"><p class="inline">Modify</p></div>
+			<button id="addDivButton">Add Square</button>
+		</article>
+		<aside id="controls" class="inline">
+			<p>Controls</p>
+			<p class="options">Background Color</p>
+			<input type="color" id="backgroundColor">
+			<p class="options">Border Color</p>
+			<input type="color" id="borderColor">
+			<p class="options">Border Thickness</p>
+			<input type="range" id="borderThickness">
+			<p class="options">Round Edges</p>
+			<input type="range" id="roundedEdges">
+		</aside>
+
+	</section>
+	<script type="text/javascript" src="js/testLib.js"></script>
+	<script type="text/javascript" src="js/calculatedStyles.js"></script>
+	<script type="text/javascript" src="js/customEventHandler.js"></script>
+	<script type="text/javascript" src="js/myJs.js"></script>
+</body>
+</html>
